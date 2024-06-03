@@ -1,20 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(27, 27, 27);
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto; 
     font-style: normal;
+    background-image: url('../images/background.png');
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center bottom;
 }
 button {
-    border: 1px solid white;
+    border: 2px solid white;
     background: transparent;
     color: white;
     width: 200px;
-    height: 30px;
+    height: 40px;
     border-radius: 20px;
     text-transform: uppercase;
     font-size: .6rem;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+
+}
+
+button.primary-btn{
+    border: 0; 
+    background-image: linear-gradient(to bottom right, #24D46B, #2EA7FF);
+    color:black;
+}
+button.inline-btn{
+    border: 0;
 }
 h2{
     color: #24D46B;
@@ -35,10 +56,45 @@ p {
 }
 header .container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+     
+        max-width: 1200px;
+    
+
+}
+header .container > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
+header .container > div:first-child {
+    justify-content: flex-start;
+}
+header .container > div:last-child {
+    justify-content: flex-end;
+}
+header .container > div:last-child > button{
+    margin-left:10px ;
+    max-width: 150px;
+    cursor: pointer;
+}
+header .container > div:last-child > span{
+    margin-right:10px ;
+     
+     font-size: 12px;
+}
 .logo{
+    transform: scale(1);
     max-height: 45px;
+    transition: .2s;
+    cursor: pointer;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: .2s;
+
 }
 figure {
     background: #1a1a1a;
@@ -111,17 +167,27 @@ a.whatsBtn {
     bottom: 25px;
 }
 
-
+.controls {
+    margin: 35px auto 40px;
+}
 @media(max-width:768px){
     .gallery-itens {
         max-width: 85%;
         margin: 30px auto;
     }
+    .hidden-xs{
+        display: none !important;
+    }
 }
     @media(min-width:768px){
+    
     header {
         padding: 5px;
     }  
+    h1 {
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
     .logo{
         max-height: 30px;
     }
