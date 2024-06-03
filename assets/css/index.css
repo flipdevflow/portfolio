@@ -27,7 +27,7 @@ p {
     font-weight: 200;
 }
 .container{
-    max-width: 900px;
+    max-width: 800px;
     padding: 10px ;
     margin: 0 auto;
 }
@@ -50,18 +50,56 @@ figure {
     width: 100%;
     max-width: 100%;
 }
-.modal {
+a.whatsBtn {
+    position: absolute;
+    bottom:30px;
+    background: #24D46B;
+    height: 30px;
+    width: 30px;
+    z-index: 9999;
+    right: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.myModal {
+    background: #181818ad;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     display: none;
+}
+.myModal.show{
+    display: block;
+}
+.modal {
+    /* display: none; */
     background: #1a1919;
     height: 80%;
-    position: absolute;
+    position: relative;
     width: 80%;
     top: 10%;
     left: 0;
     border-radius: 20px;
     padding: 20px;
     margin: 13px;
-    max-width:800px
+    max-width:800px;
+    transform: scale(0);
+    transition: .2s;
+
+}
+.modal.show{
+    transform: scale(1);
+    transition: .4s;
+
 }
 .modalfoo {
     display: flex;
