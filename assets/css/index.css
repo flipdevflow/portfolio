@@ -23,10 +23,12 @@ p {
     max-width: 500px;
     margin: 0 auto;
     line-height: 1.5;
+    font-size: 0.8rem;
     opacity: .8;
     font-weight: 200;
 }
 .container{
+    text-align: center;
     max-width: 800px;
     padding: 10px ;
     margin: 0 auto;
@@ -78,7 +80,7 @@ a.whatsBtn {
     display: none;
 }
 .myModal.show{
-    display: block;
+    display: flex;
 }
 .modal {
     /* display: none; */
@@ -109,15 +111,27 @@ a.whatsBtn {
 }
 
 
-@media(min-width:768px){
+@media(max-width:768px){
+    .gallery-itens {
+        max-width: 85%;
+        margin: 30px auto;
+    }
+}
+    @media(min-width:768px){
     header {
         padding: 5px;
     }  
     .logo{
         max-height: 30px;
     }
+    p { 
+       
+        font-size: 1.0rem;
+         
+    }
     .gallery .container {
         text-align: center;
+      
     }
     .gallery-itens{
         display: flex;
@@ -137,10 +151,10 @@ a.whatsBtn {
     .modal {
         background: #1a1919;
         height: 60vh;
-        position: absolute;
+        position: relative;
         width: 80%;
         top: 10%;
-        left: 15%;
+    
         border-radius: 20px;
         padding: 20px;
     }

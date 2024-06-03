@@ -13,11 +13,20 @@ let boxModal=document.querySelector('.modal')
 })
  
 
-toggleModal=()=>{
-    modal.classList.toggle('show')  
-    setTimeout(() => {
+toggleModal=(event)=>{
+
+
+    if(event==undefined){
+        modal.classList.toggle('show')  
+        setTimeout(() => {
+            boxModal.classList.toggle('show')
+        }, "200");
+    }else if(event.target==modal){
+     
+        modal.classList.toggle('show')  
         boxModal.classList.toggle('show')
-      }, "200");
+        
+    }
   
     
 }
