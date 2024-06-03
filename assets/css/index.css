@@ -48,6 +48,11 @@ p {
     opacity: .8;
     font-weight: 200;
 }
+strong{ 
+    background: -webkit-linear-gradient(bottom right, #24D46B, #2EA7FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .container{
     text-align: center;
     max-width: 800px;
