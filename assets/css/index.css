@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto; 
@@ -36,6 +36,9 @@ button.primary-btn{
 }
 button.inline-btn{
     border: 0;
+}
+h1 {
+    margin: 65px auto;
 }
 h2{
     color: #24D46B;
@@ -101,9 +104,9 @@ header .container > div:last-child > span{
     transition: .2s;
 
 }
+
 figure {
-    background: #1a1a1a;
-     
+      
   
     border-radius: 20px;
     margin: 10px 0;
@@ -114,7 +117,7 @@ figure {
     max-width: 100%;
 }
 a.whatsBtn {
-    position: absolute;
+    position: fixed;
     bottom:30px;
     background: #24D46B;
     height: 20px;
@@ -129,7 +132,9 @@ a.whatsBtn {
     justify-content: center;
     padding: 20px;
     font-size: 20px;
+     
 }
+
 .myModal {
     background: #181818ad;
     position: fixed;
@@ -200,6 +205,18 @@ a.whatsBtn {
        
         font-size: 1.0rem;
          
+    }
+
+    .about .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about h2 {
+        text-align: left;
+    }
+    .tecno {
+        margin: 83px auto;
     }
     .gallery .container {
         text-align: center;
