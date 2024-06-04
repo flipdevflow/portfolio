@@ -203,7 +203,7 @@ a.whatsBtn {
     @media(min-width:768px){
     
     header {
-        padding: 5px;
+        padding:20px 5px;
     }  
     h1 {
         font-weight: 500;
